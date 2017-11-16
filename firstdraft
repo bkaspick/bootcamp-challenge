@@ -1,0 +1,12 @@
+import requests
+
+r = requests.get('https://api.github.com/repos/d3/d3/stats/commit_activity') # the last year of commit data for the repos "d3"
+
+data = r.json()
+
+# now I need the program to read through the data and return the week with the most commits
+
+# once I have the week with the most commits, I need to convert it from unix epoch time to a human readable data (in UTC)
+
+
+
